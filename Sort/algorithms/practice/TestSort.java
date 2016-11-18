@@ -1,16 +1,51 @@
 package algorithms.practice;
 
+import java.util.Random;
+
 /**
  * Created by Jokeria on 2016/11/4.
  */
 public class TestSort {
+    private static SortAlgorithm sortAlgorithm;
 
 
     public static void main(String[] args) {
-//        testSingleNumber();
+//        Integer[] array = {10, 4, 6, 20, -1, 4, 13, 43, 32};
+        Integer[] array = getRandomArray();
+
+//        sortAlgorithm = new Insertion();
+//        sortAlgorithm = new Selection();
+//        sortAlgorithm = new QuickSort();
+//
+//        sortAlgorithm = new HeapSort();
+//        sortAlgorithm = new MergeSort();
+        sortAlgorithm = new MergeBUSort();
+        sortAlgorithm.show(array);
+        sortAlgorithm.sort(array);
+        sortAlgorithm.show(array);
+
+//        MaxPQ<Integer> maxPQ = new MaxPQ<Integer>(20);
+//        for(int i = 0; i < array.length; i++) {
+//            maxPQ.insert(array[i]);
+//        }
+//
+//        maxPQ.delMax();
+//        maxPQ.insert(15);
+//        System.out.println(maxPQ.max());
+
         testLongestFilePath();
+
     }
 
+    private static Integer[] getRandomArray() {
+        Integer[] array = new Integer[10];
+        long mill = System.currentTimeMillis();
+        Random random = new Random(mill);
+        for(int i = 0; i < 10; i++) {
+            array[i] = (random.nextInt() % 20) + 1;
+        }
+        return array;
+    }
 
     public static void testSort() {
         SortAlgorithm sortAlgorithm;
@@ -44,4 +79,5 @@ public class TestSort {
         int length = longestFilePath.lengthLongestPath(input);
         System.out.println("lengthLongestPath result is " + length);
     }
+
 }
