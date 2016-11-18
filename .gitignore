@@ -1,0 +1,17 @@
+.idea
+.project
+.settings
+*.iml
+
+# Package Files #
+*.jar
+*.war
+*.DS_Store
+*.log
+*.class
+.classpath
+target
+out
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
