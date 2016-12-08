@@ -1,5 +1,7 @@
 package algorithms.practice;
 
+import java.util.Random;
+
 /**
  * Created by Jokeria on 2016/11/4.
  */
@@ -32,4 +34,6 @@ public abstract class SortAlgorithm {
         }
         System.out.println();
     }
+
+
 }

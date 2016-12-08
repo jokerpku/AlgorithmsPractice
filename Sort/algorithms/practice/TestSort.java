@@ -1,5 +1,7 @@
 package algorithms.practice;
 
+import practice.util.Util;
+
 import java.util.Random;
 
 /**
@@ -11,7 +13,7 @@ public class TestSort {
 
     public static void main(String[] args) {
 //        Integer[] array = {10, 4, 6, 20, -1, 4, 13, 43, 32};
-        Integer[] array = getRandomArray();
+        Integer[] array = Util.getRandomArray();
 
 //        sortAlgorithm = new Insertion();
 //        sortAlgorithm = new Selection();
@@ -37,15 +39,7 @@ public class TestSort {
 
     }
 
-    private static Integer[] getRandomArray() {
-        Integer[] array = new Integer[10];
-        long mill = System.currentTimeMillis();
-        Random random = new Random(mill);
-        for(int i = 0; i < 10; i++) {
-            array[i] = (random.nextInt() % 20) + 1;
-        }
-        return array;
-    }
+
 
     public static void testSort() {
         SortAlgorithm sortAlgorithm;
