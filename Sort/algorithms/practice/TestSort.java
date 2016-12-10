@@ -4,7 +4,7 @@ package algorithms.practice;
  * Created by Jokeria on 2016/11/4.
  */
 public class TestSort {
-
+Object
 
     public static void main(String[] args) {
 //        testSingleNumber();
