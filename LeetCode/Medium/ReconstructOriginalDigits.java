@@ -1,12 +1,19 @@
 package Medium;
 
+<<<<<<< HEAD
 import com.sun.org.apache.regexp.internal.RE;
 
+=======
+>>>>>>> 12b77068b32a16e9f032c5585a29e2804f0fbb6f
 import java.util.HashMap;
 import java.util.Map;
 
 /**
+<<<<<<< HEAD
  * Created by Jokeria on 2016/11/22.
+=======
+ * Created by Simple on 2016/11/22.
+>>>>>>> 12b77068b32a16e9f032c5585a29e2804f0fbb6f
  */
 public class ReconstructOriginalDigits {
         // static final Tuple[] tuples = new
@@ -85,14 +92,24 @@ public class ReconstructOriginalDigits {
             System.out.println(digit + " " + num);
             for(int i = 0; i < digit.length(); i++) {
                 char c = digit.charAt(i);
+<<<<<<< HEAD
                 num = map.get(c)-num;
                 if(num != 0) {
                     map.put(c, num);
+=======
+                int temp = map.get(c)-num;
+                if(temp != 0) {
+                    map.put(c, temp);
+>>>>>>> 12b77068b32a16e9f032c5585a29e2804f0fbb6f
                 } else {
                     map.remove(c);
                 }
 
             }
+<<<<<<< HEAD
+=======
+        }
+>>>>>>> 12b77068b32a16e9f032c5585a29e2804f0fbb6f
 
         // class Tuple {
         //     char key;
@@ -104,10 +121,20 @@ public class ReconstructOriginalDigits {
         //         this.digit = digit;
         //         this.val = val;
         //     }
+<<<<<<< HEAD
     }
     public static void main(String[] args) {
         ReconstructOriginalDigits instance = new ReconstructOriginalDigits();
         instance.originalDigits("");
     }
+=======
+
+        public static void main(String[] args) {
+            ReconstructOriginalDigits instance = new ReconstructOriginalDigits();
+            String res = instance.originalDigits("nnei");//owoztneoer");
+            System.out.println(res);
+        }
+
+>>>>>>> 12b77068b32a16e9f032c5585a29e2804f0fbb6f
 
 }
