@@ -3,6 +3,7 @@ package algorithms.practice;
 import practice.util.Util;
 
 import java.util.Random;
+import java.util.concurrent.locks.Lock;
 
 /**
  * Created by Jokeria on 2016/11/4.
@@ -73,5 +74,7 @@ public class TestSort {
         int length = longestFilePath.lengthLongestPath(input);
         System.out.println("lengthLongestPath result is " + length);
     }
+
+    Lock
 
 }
