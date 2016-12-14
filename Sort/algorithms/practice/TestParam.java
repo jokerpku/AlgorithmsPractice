@@ -1,5 +1,7 @@
 package algorithms.practice;
 
+import java.util.Map;
+
 /**
  * Created by Simple on 2016/11/8.
  */
@@ -60,6 +62,7 @@ public class TestParam {
     static void test2(String[] a) {
         String b[] = {"2", "2"};
         a[0] = b[0];
+
     }
 
 

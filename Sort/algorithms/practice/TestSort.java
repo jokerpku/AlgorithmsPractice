@@ -2,9 +2,6 @@ package algorithms.practice;
 
 import practice.util.Util;
 
-import java.util.Random;
-import java.util.concurrent.locks.Lock;
-
 /**
  * Created by Jokeria on 2016/11/4.
  */
@@ -41,7 +38,6 @@ public class TestSort {
     }
 
 
-
     public static void testSort() {
         SortAlgorithm sortAlgorithm;
         Integer[] array = {10, 4, 6, 20, -1, 4, 13, 43, 32};
@@ -60,7 +56,7 @@ public class TestSort {
         int[] result = single.findTwoOnesInTwos(array);
         System.out.println("single.findTwoOnesInTwos result is " + result[0] + " " + result[1]);
 
-        int[] array2 = {5,8,4,3,5,3,2,4,8,8,3,5,4};
+        int[] array2 = {5, 8, 4, 3, 5, 3, 2, 4, 8, 8, 3, 5, 4};
         System.out.println("single.findAOnesInThree result is " + single.findAOnesInThree(array2));
         System.out.println("single.findAOnesInThree2 result is " + single.findAOnesInThree2(array2));
 
@@ -75,6 +71,6 @@ public class TestSort {
         System.out.println("lengthLongestPath result is " + length);
     }
 
-    Lock
 
 }
+
