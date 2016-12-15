@@ -10,7 +10,7 @@ public class StackAndQueue {
      * 用两个队列实现栈
      */
     class StackByQueue {
-        
+
     }
 
     /**
