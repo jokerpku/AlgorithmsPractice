@@ -8,6 +8,7 @@ import practice.util.Util;
 public class TestSort {
     private static SortAlgorithm sortAlgorithm;
 
+
     public static void main(String[] args) {
 //        Integer[] array = {10, 4, 6, 20, -1, 4, 13, 43, 32};
         Integer[] array = Util.getRandomArray();
@@ -70,4 +71,6 @@ public class TestSort {
         System.out.println("lengthLongestPath result is " + length);
     }
 
+
 }
+
