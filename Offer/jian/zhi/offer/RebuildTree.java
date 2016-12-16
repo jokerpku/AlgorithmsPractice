@@ -4,14 +4,6 @@ package jian.zhi.offer;
  * Created by Jokeria on 2016/12/14.
  */
 public class RebuildTree {
-    class TreeNode {
-        TreeNode left;
-        TreeNode right;
-        int val;
-        public TreeNode(int val) {
-            this.val = val;
-        }
-    }
 
     /**
      * 输入保证前序数组和中序数组正确
@@ -19,7 +11,7 @@ public class RebuildTree {
      * @param midorder
      * @return
      */
-    public TreeNode rebuildTree(int[] preorder, int[] midorder) {
+    public BinaryTreeNode rebuildTree(int[] preorder, int[] midorder) {
         if(preorder == null || midorder == null) {
             return null;
         }
@@ -28,12 +20,12 @@ public class RebuildTree {
         return rebuildTree(preorder, midorder, 0, 0, len);
     }
 
-    public TreeNode rebuildTree(int[] preorder, int[] midorder, int prelo, int midlo, int len) {
+    public BinaryTreeNode rebuildTree(int[] preorder, int[] midorder, int prelo, int midlo, int len) {
         if(len == 0) {
             return null;
         }
 
-        TreeNode root = new TreeNode(preorder[prelo]);
+        BinaryTreeNode root = new BinaryTreeNode(preorder[prelo]);
         int index = findInMidorder(preorder[prelo], midorder, midlo, len);
         int leftLen = index - midlo;
         root.left = rebuildTree(preorder, midorder, prelo + 1, midlo, leftLen);
@@ -61,7 +53,7 @@ public class RebuildTree {
         int[] midorder = {4,7,2,1,5,3,8,6};
 
         RebuildTree instance = new RebuildTree();
-        TreeNode root = instance.rebuildTree(preorder, midorder);
+        BinaryTreeNode root = instance.rebuildTree(preorder, midorder);
         System.out.println();;
 
     }

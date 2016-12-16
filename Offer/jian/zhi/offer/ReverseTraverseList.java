@@ -6,10 +6,7 @@ import java.util.Stack;
  * Created by Jokeria on 2016/12/14.
  */
 public class ReverseTraverseList {
-    class LinkedNode {
-        int val;
-        LinkedNode next;
-    }
+
 
     public void reverseTraverse1(LinkedNode head) {
         if(head == null) {
