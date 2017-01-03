@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 给定一个字符串，找出该字符串中字符的所有排列
+ * 可扩展至八皇后问题
  * Created by Jokeria on 2016/12/19.
  */
 public class Permutation {
